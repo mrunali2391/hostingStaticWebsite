@@ -2,8 +2,9 @@ pipeline {
     agent any
     
     environment {
-        AWS_DEFAULT_REGION = 'your-aws-region'
-        AWS_CREDENTIALS = credentials('aws')
+        AWS_DEFAULT_REGION = 'ap-southeast-1'
+       AWS_ACCESS_KEY_ID = credentials('my-aws-access-key')
+        AWS_SECRET_ACCESS_KEY = credentials('my-aws-secret-key')
         S3_BUCKET_NAME = 'learningops.info'
     }
     
